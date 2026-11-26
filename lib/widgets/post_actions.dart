@@ -13,31 +13,36 @@ class PostActions extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
+        // Like button
         TextButton.icon(
           onPressed: () {},
-          icon: Icon(Icons.thumb_up, color: fbPrimary),
+          icon: const Icon(Icons.thumb_up, color: fbPrimary),
           label: CustomText(
             text: (numOfLikes ?? 0).toString(),
             fontSize: ScreenUtil().setSp(12),
-            color: fbDarkPrimary,
+            color: fbPrimary,
           ),
         ),
+
+        // Comment button
         TextButton.icon(
           onPressed: () {},
-          icon: Icon(Icons.chat_bubble_outline, color: fbDarkPrimary),
+          icon: const Icon(Icons.chat_bubble_outline, color: fbSecondary),
           label: CustomText(
             text: 'Comment',
             fontSize: ScreenUtil().setSp(12),
-            color: fbDarkPrimary,
+            color: fbSecondary,
           ),
         ),
+
+        // Share button
         TextButton.icon(
           onPressed: () {},
-          icon: Icon(Icons.redo, color: fbDarkPrimary),
+          icon: const Icon(Icons.redo, color: fbSecondary),
           label: CustomText(
             text: 'Share',
             fontSize: ScreenUtil().setSp(12),
-            color: fbDarkPrimary,
+            color: fbSecondary,
           ),
         ),
       ],
